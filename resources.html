@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源导航 - 我的博客</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="miyu_swimsuit.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h1>资源导航</h1>
+        <div class="header-nav">
+            <a href="index.html" class="back-btn">
+                <span class="arrow">←</span>
+                <span class="text">返回首页</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="nav-container">
+        <!-- 视频音乐 -->
+        <div class="nav-category">
+            <h2>视频音乐</h2>
+            <div class="nav-links">
+                <a href="https://zhongchou.modian.com/?_mpos=h_nav_discover" class="nav-link" target="_blank">
+                    <span class="link-title">摩点众筹</span>
+                    <span class="link-desc">众筹平台商品购买</span>
+                </a>
+                <a href="https://www.tosound.com/" class="nav-link" target="_blank">
+                    <span class="link-title">淘声网</span>
+                    <span class="link-desc">发现各种声音</span>
+                </a>
+                <a href="https://music.gdstudio.xyz/" class="nav-link" target="_blank">
+                    <span class="link-title">GD音乐台</span>
+                    <span class="link-desc">免费下载音乐</span>
+                </a>
+                <a href="https://www.midishow.com/" class="nav-link" target="_blank">
+                    <span class="link-title">MidiShow</span>
+                    <span class="link-desc">midi音乐下载</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 学术资源 -->
+        <div class="nav-category">
+            <h2>学术资源</h2>
+            <div class="nav-links">
+                <a href="https://chowluking.com/share" class="nav-link" target="_blank">
+                    <span class="link-title">代码分析平台</span>
+                    <span class="link-desc">爬虫代码分享</span>
+                </a>
+                <a href="https://zz.ggonav.com/" class="nav-link" target="_blank">
+                    <span class="link-title">Z-Library</span>
+                    <span class="link-desc">书籍免费下载</span>
+                </a>
+                <a href="https://convertio.co/zh/" class="nav-link" target="_blank">
+                    <span class="link-title">convertio</span>
+                    <span class="link-desc">文件格式转换</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 下载资源 -->
+        <div class="nav-category">
+            <h2>下载资源</h2>
+            <div class="nav-links">
+                <a href="https://www.flysheep6.com/" class="nav-link" target="_blank">
+                    <span class="link-title">flysheep资源避难所</span>
+                    <span class="link-desc">免费游戏下载</span>
+                </a>
+                <a href="http://wz6z6z6.ysepan.com/" class="nav-link" target="_blank">
+                    <span class="link-title">MagicaVoxel 小仓库</span>
+                    <span class="link-desc">像素画/体素建模</span>
+                </a>
+                <a href="https://edu.360buyimg.men/auth/register?code=awwAcyd5" class="nav-link" target="_blank">
+                    <span class="link-title">仪表盘</span>
+                    <span class="link-desc">vpn购买</span>
+                </a>
+
+                <a href="https://paper.tv/" class="nav-link" target="_blank">
+                    <span class="link-title">纸工厂</span>
+                    <span class="link-desc">免费纸模下载</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 我的博客</p>
+    </footer>
+
+    <audio id="bg-music" loop>
+        <source src="悲伤或快乐的洛菲钢琴_looperman.wav" type="audio/wav">
+    </audio>
+
+    <button id="music-btn" class="music-button" title="播放音乐">
+        ♫ 音乐
+    </button>
+
+    <script src="script.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>

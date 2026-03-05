@@ -3,6 +3,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    /* ocean-like background for when video is not available */
+    background: linear-gradient(to bottom, #a7b6d2, #9acfea); /* deep blue gradient */
 }
 
 #background-video {
@@ -13,6 +15,8 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    /* solid ocean color behind video, visible if video fails/hasn't loaded yet */
+    background-color: #80abc9;
 }
 
 header {
@@ -51,7 +55,7 @@ header p {
 .article-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(189, 216, 220, 0.7);
 }
 
 article {
@@ -59,16 +63,24 @@ article {
     padding: 0;
     border-radius: 0;
 }
-
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    max-width: 800px;      /* 限制宽度与容器相同 */
+    margin: 30px auto;     /* 居中显示 */
+}
 article h2 {
     margin-top: 0;
 }
+
 
 footer {
     position: relative;
     z-index: 1;
     padding: 20px;
-    margin: 30px auto;
+    /* push footer down a bit more */
+    margin: 150px auto 30px;
     max-width: 800px;
     border-radius: 10px;
     text-align: center;
@@ -83,4 +95,30 @@ audio {
     border-radius: 5px;
     padding: 5px;
     width: 200px;
+}
+
+.music-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    padding: 10px 15px;
+    background-color: rgba(13, 110, 253, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.music-button:hover {
+    background-color: rgba(13, 110, 253, 1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.music-button:active {
+    transform: scale(0.98);
 }

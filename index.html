@@ -9,33 +9,41 @@
 <body>
     <video autoplay muted loop id="background-video">
         <source src="miyu_swimsuit.mp4" type="video/mp4">
-        您的浏览器不支持视频标签。
     </video>
-
-    <audio autoplay loop>
-        <source src="悲伤或快乐的洛菲钢琴_looperman.wav" type="audio/wav">
-        您的浏览器不支持音频标签。
-    </audio>
 
     <header>
         <h1>欢迎来到我的个人博客</h1>
-        <p>分享</p>
     </header>
-    <div class="article-container">
-        <article>
-            <h2>学习</h2>
-            <p>各种学习网站</p>
-        </article>
-    </div>
-    <div class="article-container">
-        <article>
-            <h2>资源</h2>
-            <p>各种免费资源</p>
-        </article>
-    </div>
+    <a class="article-link" href="study.html">
+        <div class="article-container">
+            <article>
+                <h2>学习</h2>
+                <p>各种学习网站</p>
+            </article>
+        </div>
+    </a>
+    <a class="article-link" href="resources.html">
+        <div class="article-container">
+            <article>
+                <h2>资源</h2>
+                <p>各种免费资源</p>
+            </article>
+        </div>
+    </a>
     <footer>
         <p>&copy; 2026 我的博客</p>
     </footer>
+
+    <!-- Audio player -->
+    <audio id="bg-music" loop>
+        <source src="悲伤或快乐的洛菲钢琴_looperman.wav" type="audio/wav">
+    </audio>
+
+    <!-- Music control button in bottom right -->
+    <button id="music-btn" class="music-button" title="播放音乐">
+        ♫ 音乐
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
